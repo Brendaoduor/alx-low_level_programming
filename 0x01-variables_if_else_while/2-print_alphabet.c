@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main- Entry point
- *
+ * main - Entry point
  * Return: Always 0(success)
  */
 int main(void)
@@ -10,8 +9,8 @@ int main(void)
 char x;
 for (x = 'a'; x <= 'z'; x++)
 {
-putchar(x);
-putchar('\n');
+	putchar(x);
+	putchar('\n');
 }
 return (0);
 }		
