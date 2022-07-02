@@ -21,6 +21,7 @@ for (num3 = 2; num1 < 9; num1++)
 	putchar(num1);
 	putchar(num3);
 	if (num != 7 || num1 != 8 || num3 != 9)
+	continue;
 	putchar(',');
 	putchar(' ');
 }
