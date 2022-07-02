@@ -7,14 +7,16 @@
  */
 int main(void)
 {
-int x;
-for (int x = 'a'; x <= 'z'; x++)
+char x;
+
+for (x = 'a'; x <= 'z'; x++)
 {
 	putchar(x);
 }
-for (int x = 'A'; x <= 'Z'; x++)
+for (x = 'A'; x <= 'Z'; x++)
 {
 	putchar(x);
 }
+	putchar('\n');
 return (0);
 }
