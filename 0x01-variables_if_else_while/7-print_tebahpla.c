@@ -11,7 +11,7 @@ char x;
 for (x = 'z'; x >= 'a'; x--)
 {
 	putchar(x);
-	putchar('\n');
 }
+	putchar('\n');
 return (0);
 }
