@@ -23,9 +23,11 @@ putchar(b + '0');
 putchar(' ');
 putchar(c + '0');
 putchar(d + '0');
-}
+{
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
