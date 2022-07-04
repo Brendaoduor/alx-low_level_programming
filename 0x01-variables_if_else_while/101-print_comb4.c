@@ -7,28 +7,25 @@
  */
 int main(void)
 {
-int num1;
-int num2;
-int num3;
-for (num1 = 48; num1 < 58; num1++)
+int a, b, c, d;
+for (a = 0; a < 1000; a++)
 {
-for (num2 = 49; num2 < 58; num2++)
+b = a / 100;
+c = (a / 10) % 10;
+d = a % 10;
+if (b < c && c < d)
 {
-for (num3 = 50; num3 < 58; num3++)
+putchar(b + '0');
+putchar(c + '0');
+putchar(d + '0');
+if (a < 700)
 {
-if (num3 > num2 && num2 > num1)
-{	
-	putchar(num1);
-	putchar(num2);	
-	putchar(num3);
-if (num1 != 55 || num2 != 56)
-{
-	putchar(',');
-	putchar(' ');
+putchar(',');
+putchar(' ');
 }
 }
 }
-}
-	putchar('\n');
+putchar('\n');
 return (0);
+
 }
