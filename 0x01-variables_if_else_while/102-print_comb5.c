@@ -7,23 +7,28 @@
  */
 int main(void)
 {
-int num, num1;
-for (num = 0; num < 98; num++)
+int a, b, c, d, e, f;
+for (e = 0; e < 100; e++)
 {
-for (num1 = num + 1; num < 99; num1++)
+a = e / 10;
+b = e % 10;
+for (f = 0; f < 100; f++)
 {
-	putchar((num / 10) + '0');
-	putchar((num % 10) + '0');
-	putchar(' ');
-	putchar((num1 / 10) + '0');
-	putchar((num1 % 10) + '0');
-if (num == 98 && num1 == 99)
-	continue;
-	putchar(',');
-	putchar(' ');
+c = f / 10;
+d = f % 10;
+if (a < c || (a == c && b < d))
+{
+putchar(a + '0');
+putchar(b + '0');
+putchar(' ');
+putchar(c + '0');
+putchar(d + '0');
+}
+putchar(',');
+putchar(' ');
 }
 }
-	putchar('\n');
+putchar('\n');
 return (0);
 }
 
