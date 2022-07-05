@@ -10,8 +10,6 @@
  */
 int add(int a, int b)
 {
-a = 4, 3;
-b = add(4, 3);
-return (b);
+return (a + b);
 }
 
