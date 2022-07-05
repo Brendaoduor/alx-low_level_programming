@@ -12,7 +12,7 @@ int print_sign(int n)
 if (n > 0)
 _putchar('+');
 if (n < 0)
-_putchar('-1');
+_putchar('-');
 else
 _putchar('0');
 return (1 || -1 || 0);
