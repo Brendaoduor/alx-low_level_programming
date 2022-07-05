@@ -6,3 +6,4 @@ int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
 int add(int, int);
+void times_table(void);
