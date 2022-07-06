@@ -7,12 +7,12 @@
  *
  * Return:  returns the value of z
  */
-int print_last_digit(int z)
+int print_last_digit(int n)
 {
-if (z < 0)
+if (n < 0)
 
-z = -z;
+n = -n;
 
-return (z % 10);
+return (n % 10);
 }
 
