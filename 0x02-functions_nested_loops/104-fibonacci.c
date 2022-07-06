@@ -9,14 +9,14 @@ int main(void)
 {
 int a;
 unsigned long int b = 1, c = 2, sum;
-for (a = 0; a <= 98 a++)
+for (a = 0; a <= 98; a++)
 if (a != 98)
 {
-printf("%lu, ", sum)
+printf("%lu, ", sum);
 }
 else
 {
-printf("%lu\n", sum)
+printf("%lu\n", sum);
 }
 sum = b + c;
 b = c;
