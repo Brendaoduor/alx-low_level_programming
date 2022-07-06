@@ -15,7 +15,9 @@ printf("%lu", sum);
 a = b;
 b = sum;
 }
-printf("\n");
-printf(", ");
+if (n == 49)
+printf("%lu\n");
+else
+printf("%lu, ");
 return (0);
 }
