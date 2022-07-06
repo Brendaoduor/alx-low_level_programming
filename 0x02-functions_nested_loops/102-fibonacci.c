@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0(success)
+ * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int n;
-unsigned long a = 0, b = 1, sum;
-for (n = 0; n <= 50; n++)
+long int i = 0, j = 1, k = 2, sum = 0;
+for (i = 1; i <= 50; ++i)
 {
-sum = a + b;
-printf("%lu", sum);
-a = b;
-b = sum;
+if (j != 20365011074)
+{
+printf("%ld, ", j);
 }
-if (n == 49)
-printf("%lu\n");
 else
-printf("%lu, ");
+{
+printf("%ld\n", j);
+}
+sum = j + k;
+j = k;
+k = sum;
+}
 return (0);
 }
