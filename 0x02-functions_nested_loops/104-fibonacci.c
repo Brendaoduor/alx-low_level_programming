@@ -11,6 +11,7 @@ int a;
 unsigned long int b = 1, c = 2, sum;
 for (a = 0; a <= 98; a++)
 {
+sum = b + c;
 if (a != 98)
 {
 printf("%lu, ", sum);
@@ -19,7 +20,6 @@ else
 {
 printf("%lu\n", sum);
 }
-sum = b + c;
 b = c;
 c = sum;
 }
