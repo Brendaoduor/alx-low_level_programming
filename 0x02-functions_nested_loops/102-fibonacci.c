@@ -7,7 +7,7 @@
 int main(void)
 {
 int n;
-int a = 1, b = 2, sum;
+unsigned long = 1, b = 2, sum;
 for (n = 0; n <= 50; n++)
 {
 printf("%lu", sum);
