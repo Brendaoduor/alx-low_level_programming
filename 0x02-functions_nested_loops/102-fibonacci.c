@@ -14,7 +14,7 @@ printf("%lu", sum);
 a = b;
 b = sum;
 sum = a + b;
-if (n == 1)
+if (n == 49)
 printf("\n");
 else
 printf(", ");
