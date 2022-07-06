@@ -6,15 +6,18 @@
  */
 int main(void)
 {
-int a = 1, b = 2, n = 50, sum = 0;
-printf("Fibonacci series: %d, %d", a, b);
-sum = a + b;
-while (sum <= n)
+int n;
+int a = 1, b = 2, sum;
+for (n = 0; n <= 50; n++)
 {
-printf("%d", sum);
+printf("%lu", sum);
 a = b;
 b = sum;
 sum = a + b;
+if (n == 1)
+printf("\n");
+else
+printf(", ");
 }
 return (0);
 }
