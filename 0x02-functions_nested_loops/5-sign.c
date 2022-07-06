@@ -20,6 +20,7 @@ _putchar('0');
 else
 {
 _putchar('-');
+return (-1);
 }
-return (1 || 0 || -1);
+return (1 || 0);
 }
