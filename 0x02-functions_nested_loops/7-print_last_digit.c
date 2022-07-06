@@ -13,6 +13,6 @@ if (z < 0)
 
 z = -z;
 
-return (z);
+return (z % 10);
 }
 
