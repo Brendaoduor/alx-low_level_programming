@@ -11,13 +11,11 @@ unsigned long a = 0, b = 1, sum;
 for (n = 0; n <= 50; n++)
 {
 sum = a + b;
-printf("%lu", sum);
+printf("%lu, ", sum);
 a = b;
 b = sum;
 }
 if (n == 49)
 printf("\n");
-else
-printf(",");
 return (0);
 }
