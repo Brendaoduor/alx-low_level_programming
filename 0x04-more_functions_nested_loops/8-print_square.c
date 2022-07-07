@@ -13,7 +13,7 @@ for (sq = 0; sq <= size; sq++)
 {
 for (sq1 = 0; sq1 <= size; sq1++)
 {
-_putchar('#');
+_putchar(35);
 {
 _putchar('\n');
 }
