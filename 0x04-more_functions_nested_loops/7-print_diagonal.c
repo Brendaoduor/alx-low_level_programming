@@ -12,5 +12,10 @@ if (n > 0)
 for (diagonal = 0; diagonal < n; diagonal++)
 _putchar('\\');
 }
+if (diagonal == n - 1)
+continue;
+{
+_putchar('\n');
+}
 _putchar('\n');
 }
