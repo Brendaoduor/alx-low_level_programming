@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints fizz-buzz test
+ * main - prints fizz-buzz test
  *
  * Return: returns value
  */
