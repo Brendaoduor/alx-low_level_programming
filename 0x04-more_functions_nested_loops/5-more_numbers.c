@@ -10,7 +10,7 @@ for (a = 0; a <= 9; a++)
 {
 for (b = 0; b <= 14; b++)
 {
-if (num > 9)
+if (b > 9)
 _putchar((b / 10) + '0');
 _putchar((b % 10) + '0');
 }
