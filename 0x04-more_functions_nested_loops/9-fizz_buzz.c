@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * fizz_buzz - prints fizz-buzz test
  *
  * Return: returns value
  */
-void fizz_buzz(void)
+int main(void)
 {
 int num;
 for (num = 1; num <= 100; num++)
