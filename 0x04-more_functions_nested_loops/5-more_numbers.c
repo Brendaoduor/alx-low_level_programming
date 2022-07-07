@@ -14,6 +14,6 @@ if (b >= 10)
 _putchar((b / 10) + '0');
 _putchar((b % 10) + '0');
 }
-}
 _putchar('\n');
+}
 }
