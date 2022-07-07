@@ -8,9 +8,9 @@ void print_diagonal(int n)
 {
 int diagonal;
 if (n > 0)
-for (diagonal = 0; diagonal < n; diagonal++)
 {
+for (diagonal = 0; diagonal < n; diagonal++)
 _putchar('\\');
-_putchar('\n');
 }
+_putchar('\n');
 }
