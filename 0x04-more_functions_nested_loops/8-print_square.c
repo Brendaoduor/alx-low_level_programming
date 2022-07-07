@@ -20,6 +20,5 @@ for (sq1 = 0; sq1 <= size; sq1++)
 	_putchar('\n');
 }
 }
-_putchar('\n');
 }
 
