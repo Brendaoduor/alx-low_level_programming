@@ -7,7 +7,7 @@
 void print_diagonal(int n)
 {
 int diagonal;
-if (diagonal > 0)
+if (n > 0)
 for (diagonal = 0; diagonal < n; diagonal++)
 {
 _putchar('\\');
