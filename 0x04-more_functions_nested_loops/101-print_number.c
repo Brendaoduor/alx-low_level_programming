@@ -14,5 +14,5 @@ if (n < 0)
 }
 if ((num / 10) > 0)
 	print_number(num / 10);
-putchar((num % 10) + '0');
+_putchar((num % 10) + '0');
 }
