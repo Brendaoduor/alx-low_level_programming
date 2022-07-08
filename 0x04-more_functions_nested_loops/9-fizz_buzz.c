@@ -22,7 +22,7 @@ if (num == 100)
 	continue;
 printf(" ");
 }
-	p`rintf("\n");
+printf("\n");
 return (0);
 }
 
