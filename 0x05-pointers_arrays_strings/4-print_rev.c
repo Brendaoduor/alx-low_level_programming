@@ -10,6 +10,6 @@ int x, res;
 	while (s[res++])
 		x++;
 	for (res = x - 1; res >= 0; x--)
-		_putchar(s[res]);
-	_putchar('\n');
+		putchar(s[res]);
+	putchar('\n');
 }
