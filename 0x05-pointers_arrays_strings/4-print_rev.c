@@ -6,10 +6,11 @@
  */
 void print_rev(char *s)
 {
-int x;
+int n, x;
 char *a, *e, res;
 	a = s;
 	e = s;
+	n = strlen(s);
 	for (x = 0; x < x - 1; x++)
 		e++;
 	for (x = 0; x < 1 / 2; x++)
@@ -20,5 +21,7 @@ char *a, *e, res;
 
 		a++;
 		e++;
+	_putchar(s);
+	_putchar('\n');
 	}
 }
