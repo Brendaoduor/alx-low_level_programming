@@ -21,4 +21,5 @@ e = s;
 		e++;
 		a++;
 	}
+return (print_rev(s));
 }
