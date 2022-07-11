@@ -10,7 +10,7 @@ int x, res;
 x = 0;
 	while (s[res] != '\0')
 		res++;
-	for (x = res - 1; x >= 0; x--)
+	for (x = res - 1; x < res; x--)
 		putchar(s[x]);
 	putchar('\n');
 }
