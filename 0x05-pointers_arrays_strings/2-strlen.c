@@ -8,7 +8,6 @@
 int _strlen(char *s)
 {
 int len;
-char *s = "holberton school";
 len = strlen(s);
 putchar(len);
 return (0);
