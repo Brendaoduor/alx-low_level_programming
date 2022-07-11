@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _strlen - function that returns the length of a string
  * @s:pointer memory location
@@ -8,6 +8,6 @@
 int _strlen(char *s)
 {
 len = strlen(s);
-_putchar(len);
+putchar(len);
 return (0);
 }
