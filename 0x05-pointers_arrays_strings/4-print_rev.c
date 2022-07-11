@@ -11,7 +11,7 @@ char *a, *e, res;
 	a = s;
 	e = s;
 	for (x = 0; x < x - 1; x++)
-		*e++;
+		e++;
 	for (x = 0; x < 1 / 2; x++)
 	{
 		res = *e;
