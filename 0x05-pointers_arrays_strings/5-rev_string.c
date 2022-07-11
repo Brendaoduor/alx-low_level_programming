@@ -13,6 +13,6 @@ char res;
 	for (index = n - 1; index >= n / 2; index--)
 	{
 		res = s[index];
-		s[index] = s[n - index - 1];
-	}	s[n - index - 1] = res;
+		s[index] = s[n];
+	}	s[n] = res;
 }
