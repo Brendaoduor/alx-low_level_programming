@@ -14,5 +14,8 @@ char tmp;
 	{
 		tmp = s[index];
 		s[index] = s[n - index - 1];
-	}	s[n - index - 1] = tmp;
+		s[n - index - 1] = tmp;
+		n - index - 1 -= 1;
+	}
+
 }
