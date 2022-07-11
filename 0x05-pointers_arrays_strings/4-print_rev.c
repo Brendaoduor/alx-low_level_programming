@@ -15,5 +15,8 @@ char *a, *e, res;
 		res = *e;
 		*e = *a;
 		*a = res;
+
+		e++;
+		a++;
 	}
 }
