@@ -18,6 +18,6 @@ do {
 	else if (num2 > 0)
 		break;
 }
-while (*s++)
+while (*s++);
 	return (num2 * num);
 }
