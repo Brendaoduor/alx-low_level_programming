@@ -15,5 +15,5 @@ while (*s != '\0')
 }
 len = strlen(s);
 putchar(len);
-return (0);
+return (len);
 }
