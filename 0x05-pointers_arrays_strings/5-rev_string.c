@@ -6,7 +6,7 @@
  */
 void rev_string(char *s)
 {
-int n, index;
+int n = 0, index = 0;
 char res;
 	while (s[index] != '\0')
 		n++;
