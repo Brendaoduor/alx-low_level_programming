@@ -21,7 +21,5 @@ char *a, *e, res;
 
 		a++;
 		e++;
-	_putchar(s);
-	_putchar('\n');
 	}
 }
