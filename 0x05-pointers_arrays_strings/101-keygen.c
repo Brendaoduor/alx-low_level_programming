@@ -17,6 +17,6 @@ while (b <= 2645)
 	b += a;
 	printf("%c", a);
 }
-printf("%c", 2772 - sum);
+printf("%c", 2772 - b);
 return (0);
 }
