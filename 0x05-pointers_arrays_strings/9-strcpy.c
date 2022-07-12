@@ -13,7 +13,9 @@ int var = 0;
 	while (src[var] != '\0')
 	{
 	dest[var] = src[var];
-	var++;
+	dest++;
+	src++;
 	}
+	*dest = '\0';
 return (dest);
 }
