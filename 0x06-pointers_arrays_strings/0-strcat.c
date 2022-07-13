@@ -1,11 +1,20 @@
-#include "main.h"
+#include "mainh.h"
+#include <string.h>
 
 /**
- * _strcat - concatenates two strings
- *
- * Return: returns the results
+ * strcat - this function enables concatenation between two strings
+ * Return: returns the result after concatenation
  */
 char *_strcat(char *dest, char *src)
 {
-	return ((_strcat(*src, *dest));
+	char var = 0;
+	char var1 = 0;
+	while (dest[var])
+		var++;
+	for (var = 0; src[var]; var++;)
+	{
+		dest[var1] = src[var];
+	}
+return (dest);
 }
+
