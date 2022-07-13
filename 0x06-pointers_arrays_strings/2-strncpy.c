@@ -14,8 +14,8 @@ char *index = dest;
 	while (*src != '\0')
 	{
 		*dest = *src;
-		*dest++;
-		*src++;
+		dest++;
+		src++;
 	}
 	return (index);
 }
