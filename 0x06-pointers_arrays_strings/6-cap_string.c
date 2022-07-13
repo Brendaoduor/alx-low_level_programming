@@ -25,9 +25,9 @@ int a = 0;
 		str[a - 1] == ')' ||
 		str[a - 1] == '{' ||
 		str[a - 1] == '}' ||
-		index == 0)
+		a == 0)
 		str[a] -= 32;
-	index++;
+	a++;
 	}
 	return (str);
 }
