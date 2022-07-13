@@ -5,7 +5,7 @@
  * @str: the characters to be  changed to uppercase
  * Return: returns the output
  */
-char *string_upper(char *str)
+char *string_toupper(char *str)
 {
 int a = 0;
 	while (str[a])
