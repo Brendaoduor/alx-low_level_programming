@@ -1,4 +1,4 @@
-#include "mainh.h"
+#include "main.h"
 #include <string.h>
 
 /**
@@ -14,7 +14,7 @@ char var1 = 0;
 
 	while (dest[var])
 		var++;
-	for (var = 0; src[var]; var++;)
+	for (var = 0; src[var]; var++)
 	{
 		dest[var1] = src[var];
 	}
