@@ -11,7 +11,6 @@ char *_strcat(char *dest, char *src)
 {
 char var = 0;
 char var1 = 0;
-
 	while (dest[var])
 		var++;
 	for (var = 0; src[var]; var++)
@@ -20,4 +19,3 @@ char var1 = 0;
 	}
 return (dest);
 }
-
