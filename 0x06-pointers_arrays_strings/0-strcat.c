@@ -16,6 +16,8 @@ int var1;
 	for (var1 = 0; src[var1]; var1++)
 	{
 		dest[var] = src[var1];
+		var++;
 	}
+	dest[var] = '\0';
 return (dest);
 }
