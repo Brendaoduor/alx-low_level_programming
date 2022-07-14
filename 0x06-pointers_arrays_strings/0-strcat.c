@@ -9,8 +9,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-char var = 0;
-char var1 = 0;
+int var = 0;
+int var1;
 	while (dest[var])
 		var++;
 	for (var1 = 0; src[var1]; var1++)
