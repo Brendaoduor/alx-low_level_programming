@@ -14,6 +14,7 @@ int index1 = 0, index2 = 0;
 	while (dest[index1++])
 		index2++;
 	for (index1 = 0; src[index1] && index1 < n; index1++)
-		dest[index2] = src[index1];
+		dest[index2++] = src[index1];
+	
 	return (dest);
 }
