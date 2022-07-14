@@ -13,9 +13,9 @@ char var = 0;
 char var1 = 0;
 	while (dest[var])
 		var++;
-	for (var = 0; src[var]; var++)
+	for (var1 = 0; src[var1]; var1++)
 	{
-		dest[var1] = src[var];
+		dest[var] = src[var1];
 	}
 return (dest);
 }

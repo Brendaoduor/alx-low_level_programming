@@ -17,5 +17,5 @@ char num = 0, index = 0;
 		dest[num] = src[num];
 	for (num = index; num < n; num++)
 		dest[num] = '\0';
-	return (num);
+return (num);
 }
