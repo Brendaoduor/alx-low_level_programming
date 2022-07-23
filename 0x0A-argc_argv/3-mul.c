@@ -6,7 +6,7 @@
  * @argv: an array that holds the string
  * Return: always 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int n1, n2, prod;
 	if (argc != 3)
