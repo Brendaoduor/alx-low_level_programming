@@ -15,9 +15,9 @@ unsigned int num;
 if (size == 0)
 	return (NULL);
 pointer = malloc(sizeof(char) * size);
-if (size == NULL)
+if (pointer == NULL)
 	return (NULL);
 for (num = 0; num < size; num++)
 	pointer[num] = c;
-return (num);
+return (pointer);
 }
