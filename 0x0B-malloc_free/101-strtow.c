@@ -46,7 +46,7 @@ for (index = 0; index < len; index++)
  * @str: The string to be split.
  * Return: always 0 success
  */
-char **strtow(char *str)
+chiar **strtow(char *str)
 {
 char **strings;
 int index = 0, words, w, letters, l;
@@ -60,9 +60,9 @@ if (strings == NULL)
 	return (NULL);
 for (w = 0; w < words; w++)
 {
-while (str[index] == ' ')
+	while (str[index] == ' ')
 	index++;
-	letters = word_len(str + index);
+letters = word_len(str + index);
 strings[w] = malloc(sizeof(char) * (letters + 1));
 if (strings[w] == NULL)
 {
@@ -73,7 +73,7 @@ if (strings[w] == NULL)
 }
 for (l = 0; l < letters; l++)
 	strings[w][l] = str[index++];
-	strings[w][l] = '\0';
+strings[w][l] = '\0';
 }
 	strings[w] = NULL;
 	return (strings);
