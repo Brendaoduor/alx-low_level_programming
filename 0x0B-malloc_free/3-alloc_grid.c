@@ -13,12 +13,12 @@ int **twoD;
 int height_index, widt;
 if (width <= 0 || height <= 0)
 return (NULL);
-twoD = malloc(sizeof(int *)  * height_index);
+twoD = malloc(sizeof(int *)  * height);
 if (twoD == NULL)
 	return (NULL);
 for (height_index = 0; height_index < height; height_index++)
 {
-	twoD[height_index] = malloc(sizeof(int)  * widt);
+	twoD[height_index] = malloc(sizeof(int)  * width);
 	if (twoD[height_index] == NULL)
 	{
 		for (; height_index >= 0; height_index--)
