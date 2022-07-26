@@ -46,7 +46,7 @@ for (index = 0; index < len; index++)
  * @str: The string to be split.
  * Return: always 0 success
  */
-chiar **strtow(char *str)
+char **strtow(char *str)
 {
 char **strings;
 int index = 0, words, w, letters, l;
