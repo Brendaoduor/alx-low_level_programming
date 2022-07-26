@@ -21,12 +21,12 @@ for (arg = 0; arg < ac; arg++)
 str = malloc(sizeof(char) * size + 1);
 if (str == NULL)
 	return (NULL);
-	index = 0;
+index = 0;
 for (arg = 0; arg < ac; arg++)
 	{
 	for (byte = 0; av[arg][byte]; byte++)
 		str[index++] = av[arg][byte];
-		str[index++] = '\n';
+	str[index++] = '\n';
 	}
 str[size] = '\0';
 return (str);
