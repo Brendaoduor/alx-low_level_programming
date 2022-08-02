@@ -14,9 +14,10 @@ if (d == 0)
 	}
 else
 {
-if (d->name && d->age && d->owner == NULL)
-	printf("name: owner: (nil)\n (nil)\n");
+if (d->name && d->owner == NULL)
+	printf("name: (nil)\n");
+	printf("owner: (nil)\n");
 else
-	printf("name:%s\n age:%f\n owner:%s\n", d->name, d->age, d->owner);
+	printf("name: %s\n age: %f\n owner: %s\n", d->name, d->age, d->owner);
 }
 }
