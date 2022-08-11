@@ -10,10 +10,10 @@ size_t list_len(const list_t *h)
 {
 	size_t node = 0;
 
-	while (h->str != NULL)
+	while (h)
 	{
-		printf("[%d] %s\n", h->str, h->len)
-		next++;
+		if (h->str != NULL)
+		node++;
 		h = h->next;
 	}
 	return (node);
