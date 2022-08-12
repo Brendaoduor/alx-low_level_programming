@@ -1,17 +1,18 @@
-section .text
-extern printf
-	global main, _start
+        SECTION .text
+        extern printf
+        global main, _start
 main:
 _start:
-	mov edi, fmt
-	mov edx, len
-	mov ecx, msg
-	mov ebx, 1
-	mov eax, 0 ;system call
-	call printf
-	int 0x80
-	mov eax, 1 ;system exit
-	int 0x80 ;linux kernel service
+
+        mov esi, msg    ; 64-bit ABI passing order starts w/ edi, esi, ...
+        mov edi, fmt    ;
+        mov eax, 0      ; printf is varargs, so EAX counts # of non-integer arguments being passed
+        call printf
+
+        mov ebx, 0      ; normal-exit code
+        mov eax, 1      ; process-termination service
+        int 0x80        ; linux kernel service
+
 section .data
 	msg db "Hello, Holberton", 10
 	len equ $ -msg
