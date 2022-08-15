@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * listint_len -erturns the number of elements in a linked list.
+ * listint_len -returns the number of elements in a linked list.
  * @h: the first node of the list
- * Returnt: alway 0
+ * Return: always 0
  */
 size_t listint_len(const listint_t *h)
 {
@@ -12,7 +12,7 @@ size_t listint_len(const listint_t *h)
 	while (h)
 	{
 		node++;
-		printf("%d", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
 	return (node);
