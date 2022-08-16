@@ -1,13 +1,14 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
+
 /**
- * _r -relocates memory of an array pointer
+ * _ra -relocates memory of an array pointer
  * @size: size of the list to be appended to
  * @new: the new node to add to the list
  * @list: the old list
+ * Return: always 0
  */
-const listint_t **_r(listint_t **list, size_t size, const listint_t *new)
+listint_t **_ra(listint_t **list, size_t size, const listint_t *new)
 {
 	listint_t **newlist;
 	size_t i;
@@ -33,7 +34,7 @@ const listint_t **_r(listint_t **list, size_t size, const listint_t *new)
 size_t free_listint_safe(listint_t **h)
 {
 	size_t i, num = 0;
-	listint_t **temp1;
+	listint_t **list = NULL;
 	listint_t *next;
 
 	if (h == NULL || *h == NULL)
@@ -42,18 +43,18 @@ size_t free_listint_safe(listint_t **h)
 	{
 		for (i = 0; i < num; i++)
 		{
-			if (*head == list[i])
-			{	
-			*head = NULL;
-			free(list);
-			return (num);
+			if (*h == list[i])
+			{
+				*h = NULL;
+				free(list);
+				return (num);
 			}
 		}
 		num++;
-		list = _r(list, num, *head);
-		next = (*head)->next;
-		free(*head);
-		*head = next;
+		list = _ra(list, num, *h);
+		next = (*h)->next;
+		free(*h);
+		*h = next;
 	}
 	free(list);
 	return (num);
