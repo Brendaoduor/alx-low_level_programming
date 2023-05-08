@@ -8,8 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, r, w;
-	char *buffer;
+	int fd, fdw, len;
 
 	if (filename == NULL)
 		return (-1);
@@ -17,16 +16,14 @@ int create_file(const char *filename, char *text_content)
 
 	if (fd == -1)
 		return (-1);
-	if (buffer == NULL)
+	if (text_content != NULL)
 	{
-		open(text_content, O_CREAT);
+		fdw = write(fd, text_content, strlen(text_content));
 	}
-
-	r = read(fd, buffer, *text_content);
-	w = write(STDOUT_FILENO, buffer, r);
-
-	buffer[r] = '\0';
-	free(buffer);
-	close(fd);
-	return (w);
+	if (fdw == -1)
+	{
+		close(fd);
+		return (-1);
+	}
+	return (1);
 }
